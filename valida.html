@@ -1,0 +1,23 @@
+<html>
+    <header>
+        <title>Inicio</title>
+        <script>
+            function displayDate() {
+                var span_Text = document.getElementById("var_text").innerText;
+                if(span_Text == null || span_Text == ""){
+                    var div = document.getElementById('label2');
+                    div.style.display = 'none';
+                }
+                console.log("valor: "+span_Text);
+            }
+        </script>
+    </header>
+    <body>
+        <div id="label1">
+            <span id="var_text">1211222</span>
+            
+        </div>    
+        <div id="label2"><span>Hola</span></div>
+        <button onclick="displayDate()">Click Me</button>   
+    </body>
+</html>
